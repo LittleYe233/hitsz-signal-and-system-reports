@@ -7,38 +7,36 @@
 
 \LoadClass[linespread=1.5, fontset=custom]{ctexart}
 
-\RequirePackage[left=.75in, right=.75in, bottom=1in, top=1in]{geometry}
-\RequirePackage{fancyhdr}
-\RequirePackage{tabularx}
-% Provides `/Xcline'.
-\RequirePackage{makecell}
-\RequirePackage{datetime}
-\RequirePackage{titlesec}
-% Removes vertical gaps in lists
-\RequirePackage{enumitem}
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
-\RequirePackage{pgfplots}
-\RequirePackage{float}
-\RequirePackage{siunitx}
-\RequirePackage{xltabular}
 \RequirePackage{booktabs}
-\RequirePackage{multirow}
-% See: https://www.overleaf.com/learn/latex/Multiple_columns
-\RequirePackage{multicol}
-% See: https://tex.stackexchange.com/a/176780
-\RequirePackage{makecell}
-% See: https://tex.stackexchange.com/a/478054/290833
-\RequirePackage{stackengine}
+\RequirePackage{caption}
+\RequirePackage{datatool}
+\RequirePackage{datetime}
+% Removes vertical gaps in lists
+% See: https://tex.stackexchange.com/a/43747/290833
+\RequirePackage[shortlabels]{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{float}
+\RequirePackage[left=.75in, right=.75in, bottom=1in, top=1in]{geometry}
 % See: https://www.overleaf.com/learn/latex/Questions/How_do_I_tab_(indent)_a_paragraph_in_LaTeX%3F
 \RequirePackage{indentfirst}
-\RequirePackage{datatool}
-\RequirePackage{caption}
-\RequirePackage{subcaption}
+% See: https://tex.stackexchange.com/a/176780
+\RequirePackage{makecell}
 % \RequirePackage[newfloat]{minted}
-% See: https://tex.stackexchange.com/a/43747/290833
-\RequirePackage{enumitem}
+% See: https://www.overleaf.com/learn/latex/Multiple_columns
+\RequirePackage{multicol}
+\RequirePackage{multirow}
+\RequirePackage{pgfplots}
+\RequirePackage{siunitx}
+% See: https://tex.stackexchange.com/a/478054/290833
+\RequirePackage{stackengine}
+\RequirePackage{subcaption}
+\RequirePackage{tabularx}
+% Provides `/Xcline'.
+\RequirePackage{titlesec}
+\RequirePackage{xltabular}
 
 %%
 %% Pre user settings
