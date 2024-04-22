@@ -1,0 +1,130 @@
+\documentclass{sasreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expidx{一}
+\expname{信号的特性}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{实验前思考题}
+% See: https://tex.stackexchange.com/a/229542
+\begin{enumerate}[(1)]
+    \item 学习和掌握ELVIS II+虚拟仪器平台和Emona SIGEx实验板的使用方法；
+    \item 了解基带低通滤波器、可调谐低通滤波器、RC电路对信号的影响；
+    \item 了解限幅器的规律；
+    \item 掌握脉冲序列速率受系统特性影响的规律，及计算最大转换速率方法。
+\end{enumerate}
+
+\section{实验记录}
+\begin{table}[H]
+    \centering
+    \caption{\bfseries 两种滤波器的转换时间}
+    \large
+    \begin{tabularx}{\textwidth}{|c|Y|Y|Y|Y|}
+        \hline
+        测量范围 (\%) & BLPF@1kHz ($\mu$s) & TLPF@1kHz ($\mu$s) & BLPF@1.5kHz ($\mu$s) & TLPF@1.5kHz ($\mu$s) \\\hline
+        上升 10-90  &                    &                    &                      &                      \\\hline
+        下降 10-90  &                    &                    &                      &                      \\\hline
+    \end{tabularx}
+\end{table}
+
+\begin{center}
+    图1.9（用自己实测数据绘制）
+\end{center}
+
+\begin{table}[H]
+    \centering
+    \caption{\bfseries 三种滤波器的转换时间}
+    \large
+    \begin{tabularx}{\textwidth}{|c|Y|Y|Y|}
+        \hline
+        测量范围 (\%) & BLPF@250Hz ($\mu$s) & TLPF@250Hz ($\mu$s) & RCLPF@250Hz ($\mu$s) \\\hline
+        上升 10-90  &                     &                     &                      \\\hline
+        下降 10-90  &                     &                     &                      \\\hline
+    \end{tabularx}
+\end{table}
+
+计算三种滤波器每秒能够转换脉冲波的最大次数：
+
+\noindent
+\begin{tabularx}{\textwidth}{cYcYcY}
+    BLPF: &  & ,TLPF: &  & ,RCLPF: & \\\Xcline{2-2}{1pt}\Xcline{4-4}{1pt}\Xcline{6-6}{1pt}
+\end{tabularx}
+
+\begin{table}[H]
+    \centering
+    \caption{\bfseries 滤波器与正弦波频率的关系}
+    \large
+    \begin{tabularx}{.8\textwidth}{|c|Y|Y|Y|}
+        \hline
+        频率 (kHz) & BLPF ($V_\mathrm{pp}$) & TLPF ($V_\mathrm{pp}$) & RCLPF ($V_\mathrm{pp}$) \\\hline
+        0.25     &                        &                        &                         \\\hline
+        0.5      &                        &                        &                         \\\hline
+        0.8      &                        &                        &                         \\\hline
+        1        &                        &                        &                         \\\hline
+        1.5      &                        &                        &                         \\\hline
+        2        &                        &                        &                         \\\hline
+        2.5      &                        &                        &                         \\\hline
+        3        &                        &                        &                         \\\hline
+        4        &                        &                        &                         \\\hline
+        5        &                        &                        &                         \\\hline
+        8        &                        &                        &                         \\\hline
+        10       &                        &                        &                         \\\hline
+    \end{tabularx}
+\end{table}
+
+\begin{center}
+    图 1.12（用自己实测数据绘制）
+\end{center}
+
+\begin{center}
+    限幅器输入输出电压的峰峰值关系图（选做）
+\end{center}
+
+\section{实验思考题}
+问题 1：
+
+两个相邻脉冲的最小间隔为 \underline{\ \ \ }，最大间隔为 \underline{\ \ \ }.
+
+问题 2:
+
+信号在通过基带低通滤波器、可调谐低通滤波器时，发生的哪些变化？
+
+信号在转换的过程中是否平缓？两种波形有哪些不同？
+
+问题 3:
+
+逐渐提高时钟频率时，BLPF和TLPF的输出波形有何改变？
+
+频率大约达到  \underline{\ \ \ } Hz时，BLPF输出发生很剧烈的变化甚至失真。
+
+频率大约达到  \underline{\ \ \ } Hz时，TLPF输出发生很剧烈的变化甚至失真。
+
+问题 4:
+
+根据1.5.3的测量数据，BLPF和TLPF可以正常工作的频率上限是多少？
+
+问题 5 (选做):
+
+通过信号发生器上的幅值（AMPLITUDE）控件改变信号的幅值，限幅器的输出会发生什么变化？
+
+\section{实验过程与数据分析}
+
+\section{实验体会与建议}
+
+\end{document}

@@ -71,8 +71,8 @@ latexmk -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error -xela
 
 ## 进度
 
-- ❎️ 实验一
-- ❎️ 实验二
+- ✔️ 实验一
+- ✔️ 实验二
 - ✔️ 实验三
 - ❎️ 实验四
 - ❎️ 实验五
