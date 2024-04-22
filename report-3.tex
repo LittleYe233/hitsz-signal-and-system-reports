@@ -1,0 +1,114 @@
+\documentclass{sasreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expidx{三}
+\expname{线性与非线性系统}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{实验前思考题}
+ (1) 写出用二倍角作为自变量来表达正弦波平方的公式:
+
+(2) 线性的定义是什么:
+
+\section{实验记录}
+\begin{table}[H]
+    \caption{限幅器实验结果}
+    \centering\large
+    \begin{tabularx}{.8\textwidth}{|Y|Y|Y|}
+        \hline
+        输入幅值 ($V_\mathrm{pp}$) & 限幅器幅值 ($V_\mathrm{pp}$) & 整流器幅值 ($V_\mathrm{pp}$) \\\hline
+        1                      &                         &                         \\\hline
+        2                      &                         &                         \\\hline
+        3                      &                         &                         \\\hline
+        4                      &                         &                         \\\hline
+        5                      &                         &                         \\\hline
+        6                      &                         &                         \\\hline
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \caption{乘法器实验结果}
+    \centering\large
+    \begin{tabularx}{.6\textwidth}{|Y|Y|}
+        \hline
+        输入幅值 ($V_\mathrm{pp}$) & 乘法器幅值 ($V_\mathrm{pp}$) \\\hline
+        1                      &                         \\\hline
+        2                      &                         \\\hline
+        3                      &                         \\\hline
+        4                      &                         \\\hline
+        5                      &                         \\\hline
+        6                      &                         \\\hline
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \caption{VCO 系统输出}
+    \centering\large
+    \begin{tabularx}{.6\textwidth}{|Y|Y|}
+        \hline
+        DC 输入电压 ($V$) & VCO 系统输出频率 ($Hz$) \\\hline
+        -3            &                   \\\hline
+        -2            &                   \\\hline
+        -1            &                   \\\hline
+        0             &                   \\\hline
+        1             &                   \\\hline
+        2             &                   \\\hline
+        3             &                   \\\hline
+    \end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+    \caption{积分器处理前后的信号}
+    \centering
+
+\end{figure}
+
+\begin{figure}[H]
+    \caption{$S(x_1+x_2)$ 信号与 $Sx_1+Sx_2$ 信号}
+    \centering
+
+\end{figure}
+
+\section{实验思考题}
+\textbf{问题 1:}
+
+将CH0通道连接至FUNC OUT，CH1通道连接至限幅器的输出端，观察输出信号并回答限幅器满足线性吗？如果不是，请说明理由；如果是，请说明从哪个输入幅值开始，其斜率大概为多少？
+
+\textbf{问题 2:}
+
+将CH0通道连接至FUNC OUT，CH1通道连接至整流器的输出端，观察输出信号，整流器满足线性测试吗？如果不是，请说明理由；如果是，请说明从哪个输入幅值开始，其斜率大概为多少？
+
+\textbf{问题 3:}
+
+将CH0通道连接至FUNC OUT，CH1通道连接至乘法器的输出端，观察输出信号，描述输入和输出之前的关系。
+
+\textbf{问题 4:}
+
+将CH0通道连接至DAC-1输出，CH1通道连接至FUNC OUT，观察输出信号，描述输入电压和输出频率之间的关系。
+
+\textbf{问题 5:}
+
+根据本次实验，结果表明积分器符合线性条件吗？改变一个系统的增益，观察结果，改变增益还符合线性条件吗？（确保增益 $a_1=b_1$、$a_0=b_0$ 且 $a_2=b_2=0$）
+
+\section{实验过程与数据分析}
+ {\kaishu (可以写实验中遇到的问题及解决方式，以及叙述具体实验过程，记录实验数据在原始数据表格，如需要引用原始数据表格，请标注出表头，如“实验记录见表2-*”)}
+
+\section{实验体会与建议}
+
+\end{document}
