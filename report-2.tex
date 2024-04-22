@@ -1,0 +1,109 @@
+\documentclass{sasreport}
+
+%%
+%% User settings
+%%
+
+\stuno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expidx{2}
+\expname{MATLAB 基础}
+
+%%
+%% This report has a special title. So we modify ``\maketitle'' command.
+%%
+
+\fancyhead[C]{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13pt}
+
+\renewcommand{\maketitle}{%
+    % Begin the experiment title.
+    \noindent{\huge\bfseries{\centering{实验\theexpidx：\theexpname}\par}}
+
+    \begin{table*}[h]
+        \setlength\tabcolsep{.5em}
+        \begin{tabularx}{\textwidth}{XX}
+            {
+                \begin{tabularx}{\linewidth}{cY}
+                    {\Large 实验日期与时间：} & {\Large \theexpdate} \\\Xcline{2-2}{1pt}
+                \end{tabularx}
+            } & {
+                    \begin{tabularx}{\linewidth}{cY}
+                        {\Large 评分：} & \\\Xcline{2-2}{1pt}
+                    \end{tabularx}
+            }     \\
+            % Add to the vertical gap between the two lines.
+            % We do not specify `/arraystretch' because it widens the vertical
+            % height of cells so that the horizontal lines (`\cline') are too away
+            % from the text.
+            \\ [-1.2em]
+            {
+            \begin{tabularx}{\linewidth}{cY}
+                {\Large 学生姓名：} & {\Large \thestuname} \\\Xcline{2-2}{1pt}
+            \end{tabularx}
+            } & {
+                    \begin{tabularx}{\linewidth}{cY}
+                        {\Large 学生学号：} & {\Large \thestuno} \\\Xcline{2-2}{1pt}
+                    \end{tabularx}
+            }
+        \end{tabularx}
+    \end{table*}
+}
+
+\ctexset{section={
+      format=\Large\bfseries\raggedright,
+      number=\chinese{section},
+      name={,、},
+      aftername=
+     }}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+{\large \noindent\textbf{源文件}请按照以下顺序放到一个文件夹内，并将文件夹命名为：\textbf{学号-姓名-实验*}，如：123456-张三-实验2，
+    \begin{enumerate}
+        \item 电子版的实验报告（学号-姓名-实验*.pdf）;
+        \item 程序源文件：*.m。
+    \end{enumerate}
+    这个文件夹打包作为实验报告整体提交。}
+
+\section{实验目的}
+
+ {\large \noindent（1）	对MATLAB软件有一个基本的认识；\\
+  （2）	理解矩阵（数组）概念及其各种运算和操作；\\
+  （3）	掌握绘图函数；\\
+  （4）	学会M文件的基本操作。}
+
+\section{实验内容}
+ {\large \noindent 要求：实验过分别写到每个实验内容下，需要时给出截图（不要为整个屏幕的截图），最后给出实现这些内容的程序文件（所有内容放到一个M文件中，内容（4）不需要提交M文件）。
+
+  \noindent （1）创建一个任意10*20的随机数组A，A1为数组A中第3行5列到第8行12列组成的子数组，求A1每一列的和、均值、方差。\\
+  （2）创建B、C为任意实数组成的3×3数组，分别进行以下计算：\\
+  \phantom{（2）}k*B,其中k为任意自定义的实数\\
+  \phantom{（2）}B矩阵的3次方\\
+  \phantom{（2）}B的每个元素除以C对应的那个元素\\
+  \phantom{（2）}B+1j*C\\
+  \phantom{（2）}B+1j*C的转置\\
+  （3）绘制一条 $\sin(x)$ 曲线，$x$ 的范围在0到4pi之间，要求绘图有名字、横纵坐标有图例，绘图有网格。\\
+  （4）将给定的.m文件，调试运行成功，并给出绘图结果。\\
+  （5）附加题：\\
+  计算第（1）题中数组A的第4行4列到第8行8列的子数组A1和第5行5列到第9行9列的子数组A2对应的每一列的相关系数（自己查公式），要求：当A2中有元素值小于0.5时，该值不参与计算；可以使用if和for语句来操作（语法自己查，与C语言类似），给出源代码和执行结果的截图。}
+
+\section{实验思考题}
+ {\large\noindent 1、linspace（1,5,10）表示的意义是什么？}
+
+ {\large\noindent 2、怎么对矩阵的行进行计算（比如分别计算每一行的和、均值、方差）？}
+
+ {\large\noindent 3、如何将对数组进行排序（从大到小、从小到大）？}
+
+\section{实验体会与建议}
+
+\end{document}
