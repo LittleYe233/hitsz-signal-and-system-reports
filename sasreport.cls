@@ -116,12 +116,12 @@
 % \setminted{linenos, breaklines, frame=lines}
 % \SetupFloatingEnvironment{listing}{name={程序清单}}
 
-\setmonofont{LigalexMono}[
-    Path=fonts/,
-    Extension=.ttf,
-    ItalicFont=LigalexMono-Italic,
-    BoldFont=LigalexMono-Bold
-]
+% \setmonofont{LigalexMono}[
+%     Path=fonts/,
+%     Extension=.ttf,
+%     ItalicFont=LigalexMono-Italic,
+%     BoldFont=LigalexMono-Bold
+% ]
 
 \setlist{nosep}
 
