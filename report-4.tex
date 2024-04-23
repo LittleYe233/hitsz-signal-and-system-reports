@@ -1,0 +1,140 @@
+\documentclass{sasreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expidx{四}
+\expname{卷积（卷积和）}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{实验前思考题}
+1、写出卷积积分的计算步骤和公式：
+
+2、$f(t)$ 与冲激函数的卷积如何表示：
+
+\section{实验记录}
+\subsection{单位脉冲响应}
+调节 $a_0$ 的增益值，结合示波器观察，使脉冲的幅值（即加法器 a 的输出）精确地达到1V，记录的值为 \underline{\ \ \ }。
+
+\begin{figure}[H]
+    \caption{延迟线路的输入信号（即第一个 $Z^{-1}$ 模块的输入）和加法器的输出信号}
+    \centering
+
+\end{figure}
+\noindent 输出序列中各个脉冲的幅值分别是：\underline{\ \ \ }, \underline{\ \ \ }, \underline{\ \ \ }.
+
+\subsection{输入脉冲对}
+$h(0),h(1),h(2),h(3)$ 的幅值分别为: \underline{\ \ \ }, \underline{\ \ \ }, \underline{\ \ \ }, \underline{\ \ \ }.
+
+验证输出序列是否仅为两个偏置单位脉冲响应的和，并说明你是如何进行验证的。要求：验证时，不能只通过图形观察，必须给出测量数据。
+
+\subsection{正弦波整流输入}
+\begin{figure}[H]
+    \caption{采样保持器的输入和输出}
+    \centering
+
+\end{figure}
+
+\begin{table}[H]
+    \caption{系统叠加性验证}
+    \centering
+    \begin{tabularx}{\textwidth}{|c|Y|Y|Y|Y|Y|} \hline
+        \multirow{2}{*}{\diagbox{序号}{幅值}} & \multirow{2}{*}{输入 (V)} & \multicolumn{4}{c|}{输出 (V)}         \\\Xcline{3-6}{1pt}
+                                          &                         & \makecell{$b_0=0.3$                 \\ $b_1=0.5$ \\ $b_2=-0.2$}                           & \makecell{$b_0=0.3$ \\ $b_1=0$ \\ $b_2=0$} & \makecell{$b_0=0$ \\ $b_1=0.5$ \\ $b_2=0$} & \makecell{$b_0=0$ \\ $b_1=0$ \\ $b_2=-0.2$} \\\hline
+        0                                 &                         &                             &  &  & \\\hline
+        1                                 &                         &                             &  &  & \\\hline
+        2                                 &                         &                             &  &  & \\\hline
+        3                                 &                         &                             &  &  & \\\hline
+        4                                 &                         &                             &  &  & \\\hline
+        5                                 &                         &                             &  &  & \\\hline
+        6                                 &                         &                             &  &  & \\\hline
+        7                                 &                         &                             &  &  & \\\hline
+        8                                 &                         &                             &  &  & \\\hline
+    \end{tabularx}
+\end{table}
+
+\subsection{正弦输入}
+\begin{figure}[H]
+    \caption{系统输入（即S/H的输出）和系统输出（即加法器的输出Y）}
+    \centering
+
+\end{figure}
+
+\begin{table}[H]
+    \caption{正弦波作为输入的输出}
+    \centering
+    \begin{tabularx}{\textwidth}{|c|Y|Y|Y|Y|Y|} \hline
+        \multirow{2}{*}{\diagbox{序号}{幅值}} & \multirow{2}{*}{输入 (V)} & \multicolumn{4}{c|}{输出 (V)}         \\\Xcline{3-6}{1pt}
+                                          &                         & \makecell{$b_0=0.3$                 \\ $b_1=0.5$ \\ $b_2=-0.2$}                           & \makecell{$b_0=0.3$ \\ $b_1=0$ \\ $b_2=0$} & \makecell{$b_0=0$ \\ $b_1=0.5$ \\ $b_2=0$} & \makecell{$b_0=0$ \\ $b_1=0$ \\ $b_2=-0.2$} \\\hline
+        0                                 &                         &                             &  &  & \\\hline
+        1                                 &                         &                             &  &  & \\\hline
+        2                                 &                         &                             &  &  & \\\hline
+        3                                 &                         &                             &  &  & \\\hline
+        4                                 &                         &                             &  &  & \\\hline
+        5                                 &                         &                             &  &  & \\\hline
+        6                                 &                         &                             &  &  & \\\hline
+        7                                 &                         &                             &  &  & \\\hline
+        8                                 &                         &                             &  &  & \\\hline
+    \end{tabularx}
+\end{table}
+
+\subsection{特殊应用 (选做)}
+\begin{figure}[H]
+    \caption{分别记录第一个、第二个设置时的波形图（选做）}
+    \centering
+
+\end{figure}
+
+\section{实验思考题}
+\textbf{问题 1:}
+
+“叠加性”指什么？根据实验结果，如何体现叠加性与可加性原理的。
+
+\textbf{问题 2:}
+
+若本实验拓展到更多的连续脉冲，你认为会看到什么现象？请加以说明。
+
+\textbf{问题 3:}
+
+测量并记录正弦波经过半波整流后的幅值，并解释其幅值减少是为什么。
+
+\textbf{问题 4:}
+
+脉冲发生器设置为其他频率时，采样会发生什么变化？是否频率越大越好，为什么？
+
+\textbf{问题 5:}
+
+这个过程与叠加原理有何关系？（可以用数学的方式来表示实验现象）
+
+\textbf{问题 6:}
+
+写出 $y_2$ 和 $y_1$ 的表达式，讨论它们有何不同点。
+
+\textbf{问题 7 (选做):}
+
+列出平方和计算的结果，并计算标准差和均值。
+
+\textbf{问题 8 (选做):}
+
+适当地改变正弦信号的频率，当正弦输入的频率在100Hz附近变化时，其振幅将会发生什么变化？
+
+\section{实验过程与数据分析}
+ {\kaishu (可以写实验中遇到的问题及解决方式，以及叙述具体实验过程，记录实验数据在原始数据表格，如需要引用原始数据表格，请标注出表头，如“实验记录见表2-*”)}
+
+\section{实验体会与建议}
+
+\end{document}
