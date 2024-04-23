@@ -70,6 +70,7 @@
 
 \fancyhead[C]{{\includegraphics{images/logo.png}}}
 \fancyhead[R]{}
+\fancyhead[L]{}
 \fancyfoot[C]{{\small \thepage}}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{.9pt}
