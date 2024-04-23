@@ -14,6 +14,7 @@
 \RequirePackage{caption}
 \RequirePackage{datatool}
 \RequirePackage{datetime}
+\RequirePackage{diagbox}
 % Removes vertical gaps in lists
 % See: https://tex.stackexchange.com/a/43747/290833
 \RequirePackage[shortlabels]{enumitem}
@@ -62,7 +63,7 @@
       name={,、},
       aftername=
      }, subsection={
-            format=\large\bfseries\raggedright,
+            format=\normalsize\bfseries\raggedright,
             number=\arabic{subsection},
             name={,.}
         }}
