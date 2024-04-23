@@ -1,0 +1,109 @@
+\documentclass{sasreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expidx{八}
+\expname{拉普拉斯变换}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{实验预习}
+1、对于图8- 1中的系统，写出输出 $x_0(t)$ 关于输入 $u(t)$ 的微分方程，系统函数，零极点以及幅频响应和相频响应的表达式。然后将输出 $x_0 = ej\omega t$ 代入该方程，得到所对应的输入 $u(t)$。然后写出输出 $x_1(t)$ 关于输入 $u(t)$ 的微分方程，系统函数以及零极点。
+
+2、对于图8- 2中的系统，写出输出 $y$ 关于输入 $u(t)$ 的微分方程，系统函数，零极点以及幅频响应和相频响应的表达式。
+
+\section{实验记录与思考题}
+\begin{figure}[H]
+    \caption{实验实测以 $x_0$ 为输出的幅频响应曲线}
+    \centering
+
+\end{figure}
+
+\textbf{问题 1}
+
+由你已经写出的系统函数画出零极点图和大致的幅频曲线图，判断这是一个什么性质滤波器？
+
+\begin{figure}[H]
+    \caption{理论计算以 $x_0$ 为输出的零极点图以及幅频响应曲线}
+    \centering
+
+\end{figure}
+
+\textbf{问题 2}
+
+3dB截止频率是多少？增益最大处对应频率是多少？
+
+\textbf{问题 3}
+
+为了与以 $x_0$ 点为输出的响应进行比较，我们在以 $x_1$ 节点为输出处测量频率响应。这是一个什么性质滤波器？最大增益处的频率及增益分别是多少？3db截止频率是多少？3db带宽是多少？记录并画出幅频响应曲线于图 3 中。
+
+\begin{figure}[H]
+    \caption{实验实测以 $x_1$ 为输出的幅频响应曲线}
+    \centering
+
+\end{figure}
+
+\begin{figure}[H]
+    \caption{输入与 $x_0$ 输出的时域图状}
+    \centering
+
+\end{figure}
+
+\textbf{问题 4}
+
+在拉普拉斯变换中，系统稳定的条件是什么？
+
+\textbf{问题 5}
+
+逐渐调高 $a_1$ 的值到正数，观察 $x_0$ 输出变化情况。1）描述输出变化情况；2）当 $a_1=0.01$ 时，发生了什么现象？记录此时输出的波形于图 5 中（此时你可以切断输入观察现象）。
+
+\begin{figure}[H]
+    \caption{$x_0$ 输出时域图}
+    \centering
+
+\end{figure}
+
+\textbf{问题 6}
+
+由你已经写出的系统函数画出零极点图和大致的幅频曲线图，判断该幅频响应与哪种滤波器幅频响应类似？
+
+\begin{figure}[H]
+    \caption{理论计算以 $y$ 为输出的零极点图以及幅频响应曲线}
+    \centering
+
+\end{figure}
+
+\textbf{问题 7}
+
+测量并画出以 $y$ 为输出的频率响应。并记录在图 7 中。增益最小处的频率是多少？
+
+\begin{figure}[H]
+    \caption{实验实测以 $y$ 为输出的幅频响应曲线}
+    \centering
+
+\end{figure}
+
+\textbf{问题 8 (选做)}
+
+怎么调节 $b_2,b_1,b_0$ 参数可以使系统变为全通滤波器？
+
+\section{实验过程与数据分析}
+ {\kaishu (可以写实验中遇到的问题及解决方式，以及叙述具体实验过程，记录实验数据在原始数据表格，如需要引用原始数据表格，请标注出表头，如“实验记录见表2-*”)}
+
+\section{实验体会与建议}
+
+\end{document}
