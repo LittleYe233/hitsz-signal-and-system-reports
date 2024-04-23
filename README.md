@@ -65,7 +65,8 @@ latexmk -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error -xela
 
 - 一些边框的宽度, 边距存在不同;
 - 一些字体和字号存在不同;
-- 问题下方没有足够的空白, 需要用户自行阅读实验报告源码, 找到需要填充内容的位置.
+- 问题下方没有足够的空白, 需要用户自行阅读实验报告源码, 找到需要填充内容的位置;
+- 一些图片和表格的序号存在不同.
 
 虽然存在不同, 但本仓库将尽最大可能保证用户的实验报告可以通过. 若不能通过, 烦请联系仓库拥有者或提交 PR.
 
@@ -76,8 +77,8 @@ latexmk -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error -xela
 - ✔️ 实验三
 - ✔️ 实验四
 - ✔️ 实验五
-- ❎️ 实验六
-- ❎️ 实验七
+- ✔️ 实验六
+- ✔️ 实验七
 - ❎️ 实验八
 - ❎️ 实验九
 - ❎️ 实验十
