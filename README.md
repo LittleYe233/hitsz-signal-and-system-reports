@@ -80,8 +80,8 @@ latexmk -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error -xela
 - ✔️ 实验六
 - ✔️ 实验七
 - ✔️ 实验八
-- ❎️ 实验九
-- ❎️ 实验十
+- ✔️ 实验九
+- ✔️ 实验十
 
 ## 测试
 
